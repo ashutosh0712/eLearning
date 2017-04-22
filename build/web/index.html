@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>e-Learning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="adamCSS.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <section id="loginBox">
+    <h3>Login</h3>
+    <form action="home.jsp" method="post" class="minimal">
+        
+        <label for="username">
+            Username:
+            <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+        </label>
+        <label for="password">
+            Password:
+            <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+        </label>
+        <button type="submit" class="btn-minimal">Sign in</button>
+    </form>
+</section>
+    </body>
+</html>
